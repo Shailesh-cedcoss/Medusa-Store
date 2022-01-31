@@ -1,0 +1,35 @@
+<div class="mwb-thankyou">
+  <div class="mwb-container">
+    <div class="mwb-thankyou__content">
+      <div class="mwb-thankyou__icon">
+        {% if module.icon.src %}
+        {% set sizeAttrs = 'width="{{ module.icon.width }}" height="{{ module.icon.height }}"' %}
+        {% if module.icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.icon.max_width }}px; max-height: {{ module.icon.max_height }}px"' %}
+        {% endif %}
+        <img src="{{ module.icon.src }}" alt="{{ module.icon.alt }}" {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <h2 class="mwb-thankyou__heading">
+        {{ module.heading_title }}
+      </h2>
+      <div class="mwb-thankyou__text">
+        {{ module.thank_you_content }}
+      </div>
+      <div class="mwb-thankyou__cta">
+        {% set href = module.thank_you_cta.button_link.url.href %}
+        {% if module.thank_you_cta.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" class="mwb-btn"
+           {% if module.thank_you_cta.button_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.thank_you_cta.button_link.no_follow %}rel="nofollow"{% endif %}
+           >
+          {{ module.thank_you_cta.button_text }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

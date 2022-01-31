@@ -1,0 +1,42 @@
+.mwb-thankyou__content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.mwb-thankyou__icon {
+    max-width: 60px;
+    margin: 0 auto 30px;
+}
+.mwb-thankyou__heading {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 65px;
+}
+.mwb-thankyou__text {
+  text-align: center;
+}
+.mwb-thankyou__text p {
+  margin: 0 0 15px;
+}
+.mwb-thankyou__text p:last-child {
+  margin: 0;
+}
+.mwb-thankyou__cta {
+  text-align: center;
+  margin-top: 30px;
+}
+.mwb-thankyou {
+    padding: 100px 0;
+}
+@media only screen and (max-width: 767px) {
+  .mwb-thankyou {
+    padding: 50px 0;
+  }
+  .mwb-thankyou__heading {
+    font-size: 45px;
+    margin: 0 0 10px;
+    line-height: 50px;
+  }
+}

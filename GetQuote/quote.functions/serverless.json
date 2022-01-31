@@ -1,0 +1,8 @@
+{
+  "appFunctions" : { },
+  "endpoints" : { },
+  "environment" : { },
+  "runtime" : "nodejs12.x",
+  "secrets" : [ "apikey" ],
+  "version" : "1.0"
+}

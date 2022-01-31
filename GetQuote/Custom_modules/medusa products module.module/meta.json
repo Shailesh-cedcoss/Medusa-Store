@@ -1,0 +1,27 @@
+{
+  "global": false,
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "QUOTE"
+  ],
+  "module_id": 63030954249,
+  "js_assets": [
+    {
+      "autoload": true,
+      "path": "../../Coded_files/jQuery.js",
+      "name": "jQuery.js"
+    },
+    {
+      "autoload": true,
+      "path": "../../Coded_files/productlisting.js",
+      "name": "jQuery.js"
+    },
+    {
+      "autoload": true,
+      "path": "../../Coded_files/close.js",
+      "name": "close.js"
+    }
+  ],
+  "is_available_for_new_content": true
+}

@@ -1,0 +1,96 @@
+[ {
+  "id" : "f793fe1b-a266-7f75-7944-eedec0098628",
+  "name" : "icon",
+  "display_width" : null,
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/6203240/images.png",
+    "alt" : "images",
+    "width" : 225,
+    "height" : 225,
+    "max_width" : 225,
+    "max_height" : 225
+  }
+}, {
+  "id" : "d1cb828d-0303-d240-7538-05499e6a60ab",
+  "name" : "heading_title",
+  "display_width" : null,
+  "label" : "Heading Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Thank You"
+}, {
+  "id" : "6d59030c-ffb1-51d1-39fd-f0bf2275b8bd",
+  "name" : "thank_you_content",
+  "display_width" : null,
+  "label" : "Thank You Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Tellus in hac habitasse platea dictumst.</span></p>\n<p><span>A iaculis at erat pellentesque adipiscing commodo elit at. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Neque sodales ut etiam sit.&nbsp;</span></p>"
+}, {
+  "id" : "ceeb1bf6-6282-dc48-1eb5-21b27a4661b6",
+  "name" : "thank_you_cta",
+  "display_width" : null,
+  "label" : "Thank You CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8d6c4ec7-d56b-5bb6-8f96-5e55042330b4",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 29021922221
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "b4e5cc79-c962-3dbc-759c-f4e09affc3ad",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Back To Shop"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 29021922221
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "Back To Shop"
+  }
+} ]

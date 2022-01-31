@@ -1,0 +1,43 @@
+<nav class="mwb-product-nav">
+  <div class="mwb-container">
+    <div class="mwb-product-nav__row">
+      <div class="mwb-product-nav__logo">
+        {% logo
+        override_inherited_src="{{ module.logo_field.override_inherited_src }}"
+        src="{{ module.logo_field.src }}"
+        alt="{{ module.logo_field.alt }}"
+        width="{{ module.logo_field.width }}"
+        height="{{ module.logo_field.height }}"
+        suppress_company_name="{{ module.logo_field.suppress_company_name }}"
+        %}
+      </div>
+      <div class="mwb-product-nav__menu-wrap">
+        <div class="mwb-product-nav__menu">
+          {% menu id="{{ module.menu_field }}" %}
+        </div>
+        <div id="cart-listing" class="mwb-product-nav__cart">
+          <a href="https://6203240.hs-sites.com/checkout-medusa">
+            {% icon
+            name="{{ module.cart_icon.name }}"
+            style="{{ module.cart_icon.type }}"
+            unicode="{{ module.cart_icon.unicode }}"
+            %}
+            <span id="cart-count"></span>
+          </a>
+        </div>
+      </div>
+      <span class="mwb-product-nav__toggle"></span>
+    </div>
+  </div>
+</nav>
+<script language="text/javascript">
+  $('.mwb-product-nav__toggle').click(function () {
+    $(this).toggleClass('active');
+    $(this).parents('.mwb-product-nav__row').toggleClass('menu-open');
+    $(this)
+      .parents('.mwb-product-nav__row')
+      .children('.mwb-product-nav__menu-wrap')
+      .toggle('slow');
+  });
+
+</script>

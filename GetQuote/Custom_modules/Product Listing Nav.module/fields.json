@@ -1,0 +1,39 @@
+[ {
+  "id" : "a80af029-12a1-20dc-8eca-36dbc6899f05",
+  "name" : "logo_field",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://cdn2.hubspot.net/hubfs/6203240/mwb-logo.png",
+    "alt" : "mwb-logo",
+    "width" : 128,
+    "height" : 73
+  }
+}, {
+  "id" : "4573906c-41e7-be8e-8455-5d7d5df10e9f",
+  "name" : "menu_field",
+  "display_width" : null,
+  "label" : "Menu",
+  "required" : false,
+  "locked" : false,
+  "type" : "menu",
+  "default" : 29451403870
+}, {
+  "id" : "8e08e284-dcf5-e634-3bc5-8d4c525a04cd",
+  "name" : "cart_icon",
+  "display_width" : null,
+  "label" : "Cart Icon",
+  "required" : false,
+  "locked" : false,
+  "icon_set" : "fontawesome-5.0.10",
+  "type" : "icon",
+  "default" : {
+    "name" : "shopping-cart",
+    "unicode" : "f07a",
+    "type" : "SOLID"
+  }
+} ]

@@ -1,0 +1,36 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+html, body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: {{ primary_font }};
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+.mwb-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.mwb-btn {
+  background-color: #5c6ac4;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: inline-block;
+  border-radius: 3px;
+}

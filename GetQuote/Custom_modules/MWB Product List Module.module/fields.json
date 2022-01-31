@@ -1,0 +1,15 @@
+[ {
+  "id" : "2cc12e2b-708c-8c1e-183e-c5293117fe59",
+  "name" : "view_product_icon",
+  "display_width" : null,
+  "label" : "View Product Icon",
+  "required" : false,
+  "locked" : false,
+  "icon_set" : "fontawesome-5.0.10",
+  "type" : "icon",
+  "default" : {
+    "name" : "eye",
+    "unicode" : "f06e",
+    "type" : "SOLID"
+  }
+} ]

@@ -1,0 +1,15 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 61551565683,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../../MWB-GetQuote/Coded_files/jQuery.js",
+    "name" : "jQuery.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../../../MWB-GetQuote/Coded_files/close.js",
+    "name" : "close.js"
+  } ],
+  "is_available_for_new_content" : true
+}

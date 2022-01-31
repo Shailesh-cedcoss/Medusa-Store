@@ -1,0 +1,275 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 4,
+        "name" : "module_159652254861386",
+        "label" : "One Line of Text",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "schema_version" : 2,
+          "path" : "@hubspot/text",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "One Line of Text",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      },
+      "4" : {
+        "x" : 4,
+        "w" : 4,
+        "name" : "module_159652229064413",
+        "label" : "Simple Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "menu_tree" : [ {
+            "children" : [ ],
+            "isPublished" : false,
+            "linkLabel" : "SHOP",
+            "type" : "PAGE_LINK"
+          }, {
+            "children" : [ ],
+            "isPublished" : false,
+            "linkLabel" : "MY ACCOUNT",
+            "type" : "PAGE_LINK"
+          }, {
+            "children" : [ ],
+            "isPublished" : false,
+            "linkLabel" : "REQUEST A QUOTE",
+            "type" : "PAGE_LINK"
+          } ],
+          "orientation" : "horizontal",
+          "css_style" : "",
+          "css_id" : "",
+          "css_class" : "mwb-product-shop__items",
+          "schema_version" : 2,
+          "path" : "@hubspot/simple_menu",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : "",
+          "widget_name" : "Simple Menu",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "mwb-product-shop__items",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      },
+      "8" : {
+        "x" : 8,
+        "w" : 4,
+        "name" : "module_159652266916187",
+        "label" : "Icon Text",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "schema_version" : 2,
+          "path" : "/BlisTemplate/custom_modules/Icon Text",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "icon_text_content" : [ {
+            "icon" : {
+              "src" : ""
+            },
+            "text_content" : "<p><strong>0</strong></p>"
+          } ],
+          "widget_name" : "Icon Text",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1596523131100298",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1596523100234295",
+            "label" : "One Line of Text",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "schema_version" : 2,
+              "path" : "@hubspot/text",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "widget_name" : "One Line of Text",
+              "css_id_str" : "",
+              "overrideable" : true
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1596523131100297",
+            "label" : "One Line of Text",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "schema_version" : 2,
+              "path" : "@hubspot/text",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "widget_name" : "One Line of Text",
+              "css_id_str" : "",
+              "overrideable" : true
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_159661160824417",
+            "label" : "image-gallery",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "schema_version" : 2,
+              "path" : "/MWB-GetQuote/Custom_modules/shop-image-gallery",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "widget_name" : "shop-image-gallery",
+              "css_id_str" : "",
+              "overrideable" : true
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

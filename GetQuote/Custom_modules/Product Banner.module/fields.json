@@ -1,0 +1,57 @@
+[ {
+  "id" : "00cf894c-ae73-5e5d-bf80-9bc4f2987ad5",
+  "name" : "banner_content",
+  "display_width" : null,
+  "label" : "Banner Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "59d50704-99d3-66d6-04e6-5eb185784fd2",
+    "name" : "banner_title",
+    "display_width" : null,
+    "label" : "Banner Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Request a Quote"
+  }, {
+    "id" : "867a5dda-52af-7016-1e3e-623f0a38f3f5",
+    "name" : "banner_text",
+    "display_width" : null,
+    "label" : "Banner Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><span>At lectus urna duis convallis. Amet venenatis urna cursus eget nunc scelerisque. Malesuada fames ac turpis egestas sed tempus urna.</span></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "banner_title" : "Request a Quote",
+    "banner_text" : "<p><span>At lectus urna duis convallis. Amet venenatis urna cursus eget nunc scelerisque. Malesuada fames ac turpis egestas sed tempus urna.</span></p>"
+  }
+}, {
+  "id" : "51a2d12c-efec-ca4b-02a5-068c2bdf55a6",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/6203240/CRM%20Products%20Image/Banner.jpg",
+    "alt" : "Banner",
+    "width" : 1920,
+    "height" : 334,
+    "max_width" : 1920,
+    "max_height" : 334
+  }
+} ]

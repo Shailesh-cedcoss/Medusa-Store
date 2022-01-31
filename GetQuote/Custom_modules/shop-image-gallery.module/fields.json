@@ -1,0 +1,74 @@
+[ {
+  "id" : "01beb4fc-f559-aeb7-f27a-9efad19c0afb",
+  "name" : "image_gallery",
+  "display_width" : null,
+  "label" : "image-gallery",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8567534a-79c4-7948-42b5-aa0ecaded20d",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/6203240/business_suits.png",
+      "alt" : "business_suits",
+      "width" : 355,
+      "height" : 453,
+      "max_width" : 355,
+      "max_height" : 453
+    }
+  }, {
+    "id" : "c56b2868-e93c-2448-83f1-b0f55fe32477",
+    "name" : "image_text",
+    "display_width" : null,
+    "label" : "Image-Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Basic t-shirt"
+  }, {
+    "id" : "c03d2660-1e87-c2bf-6ee8-a26cd965dd93",
+    "name" : "rich_text",
+    "display_width" : null,
+    "label" : "Rich _text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "€12.00\n<p>&nbsp;</p>"
+  }, {
+    "id" : "e2ecd389-91ec-3ee4-a062-244c01cd51cc",
+    "name" : "image_btn",
+    "display_width" : null,
+    "label" : "Image_btn",
+    "required" : false,
+    "locked" : false,
+    "type" : "cta"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/6203240/business_suits.png",
+      "alt" : "business_suits",
+      "width" : 355,
+      "height" : 453,
+      "max_width" : 355,
+      "max_height" : 453
+    },
+    "image_text" : "Basic t-shirt",
+    "rich_text" : "€12.00\n<p>&nbsp;</p>"
+  }
+} ]

@@ -1,0 +1,14 @@
+/* @import url('http://example.com/example_style.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+{% set primary_font = "'Roboto', sans-serif" %}
+{% include "/MWBProductTemplate/Coded_files/_globalStyle.css" %}
+{% include "/MWBProductTemplate/Coded_files/_productListing.css" %}

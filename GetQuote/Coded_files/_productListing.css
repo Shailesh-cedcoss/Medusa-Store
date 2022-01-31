@@ -1,0 +1,66 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+.mwb-pro-header {
+    min-height: auto !important;
+}
+
+.mwb-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 666;
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s linear all;
+    overflow-y: auto;
+    height: 100%;
+}
+.mwb-modal.active {
+    opacity: 1;
+    pointer-events: unset;
+}
+.mwb-modal-dialog {
+    width: 100%;
+    padding: 100px 0;
+}
+.mwb-modal-open {
+    overflow: hidden;
+}
+.mwb-modal-close {
+    cursor: pointer;
+    position: fixed;
+    width: 30px;
+    display: block;
+    right: 40px;
+    top: 10px;
+    height: 30px;
+}
+.mwb-modal-close:after, .mwb-modal-close:before {
+    width: 30px;
+    display: block;
+    right: 0;
+    height: 2px;
+    background: #222;
+    content: '';
+    position: absolute;
+    top: 14px;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    transform-origin: center;
+}
+.mwb-modal-close:before {
+    transform: rotate(-45deg);
+}

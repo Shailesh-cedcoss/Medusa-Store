@@ -1,0 +1,42 @@
+<div class="mwb-pro-details">
+  <div id="cart-container" class="mwb-container">
+    <div class="mwb-pro-details__row mwb-pro-details__row--shop" style="display:none">
+      <div class="mwb-pro-details__back-shop">
+        <h2 class="mwb-pro-details__title">
+          {{ module.back_to_shop_title }}
+        </h2>
+        <div class="mwb-pro-details__back-btn">
+          <a href="#" class="mwb-btn">
+            Back To Shop
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mwb-pro-details__row mwb-pro-details__row--cart">
+      <div class="mwb-pro-details__col">
+        <table class="mwb-pro-details__table">
+          <thead>
+            <tr>
+              <th class="mwb-pro-details__table-name">Product</th>
+              <th class="mwb-pro-details__table-quantity">Quantity</th>
+              <th class="mwb-pro-details__table-total">Total</th>
+            </tr>
+          </thead>
+          <tbody id="cart-table-body">
+          </tbody>
+        </table>
+      </div>
+      <div class="mwb-pro-details__col mwb-pro-details__form">
+        {% form
+        form_to_use="{{ module.quote_form.form_id }}"
+        response_response_type="{{ module.quote_form.response_type }}"
+        response_message="{{ module.quote_form.message }}"
+        response_redirect_id="{{ module.quote_form.redirect_id }}"
+        response_redirect_url="{{module.quote_form.redirect_url}}"
+        gotowebinar_webinar_key="{{ module.quote_form.gotowebinar_webinar_key }}"
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+{{ require_js('../js/productlisting.js'), { "defer" :true }) }}

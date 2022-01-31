@@ -1,0 +1,13 @@
+[ {
+  "id" : "3e2fc415-0a1e-f65e-5eb5-1efad2a0b566",
+  "name" : "footer_content",
+  "display_width" : null,
+  "label" : "Footer Content",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Copyright © 2020 of MakeWebBetter. All rights reserved."
+} ]

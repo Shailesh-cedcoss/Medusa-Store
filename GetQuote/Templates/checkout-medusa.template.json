@@ -1,0 +1,210 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/MWB-GetQuote/Coded_files/mwbProductStyle.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/MWB-GetQuote/Coded_files/jQuery.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/MWB-GetQuote/Coded_files/mwb-pro-custom.js"
+  } ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_158955389251963",
+        "label" : "Product Listing Nav",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "mwb-pro-header",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "logo_field" : {
+            "alt" : "mwb-logo",
+            "height" : 57,
+            "override_inherited_src" : true,
+            "src" : "https://cdn2.hubspot.net/hubfs/6203240/mwb-logo.png",
+            "width" : 100
+          },
+          "overrideable" : true,
+          "path" : "/MWB-GetQuote/Custom_modules/Product Listing Nav",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Product Listing Nav",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "mwb-pro-header",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_158962884077574",
+        "label" : "Module group",
+        "type" : "widget_container",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_1589554236135120",
+          "label" : "Product Banner",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/MWB-GetQuote/Custom_modules/Product Banner",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "Product Banner",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_1589554595735161",
+          "label" : "Checkout",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/MWB-GetQuote/Custom_modules/Checkout",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "Checkout",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        } ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_158961950422273",
+        "label" : "Footer",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/MWB-GetQuote/Custom_modules/Footer",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Footer",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

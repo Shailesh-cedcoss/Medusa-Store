@@ -1,0 +1,64 @@
+<div class="mwb-container">
+  <div class="mwb-product-list">
+    {% set products = crm_objects("product", "&limit=12&offset=0", 'id, name, price, image') %}
+    {% for product in products.results %}
+      <div class="mwb-product-list__item" role="data-node" data-image="{{product.image}}" data-name="{{product.name}}"  data-price="{{product.price}}" data-id="{{product.id}}">
+        <div class="mwb-product-list__img">
+          <img src="{{product.image}}">
+          <div class="mwb-product-list__action">
+            <div class="mwb-product-list__icon check-product" data-id="{{product.id}}">
+              {% icon
+                name="{{ module.view_product_icon.name }}"
+                style="{{ module.view_product_icon.type }}"
+                unicode="{{ module.view_product_icon.unicode }}"
+              %}
+            </div>
+          </div>
+        </div>
+        <h2 class="mwb-product-list__title">{{ product.name }}</h2>         
+        <div role="action-wrapper" class="mwb-product-list__quote-btn-wrapper">
+          <a class="mwb-product-list__quote-btn" >Request a quote</a>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="mwb-modal" tabindex="-1" role="dialog">
+  <div class="mwb-product-details">     
+    <div class="mwb-container">
+      <span class="mwb-modal-close"></span>
+      <div class="mwb-product-details__row">
+        <div class="mwb-product-details__img">
+          <img role="modal-product-image" src="">
+        </div>
+        <div class="mwb-product-details__content">
+          <h2 id ="product-name" class="mwb-product-details__title">
+            Women trousers
+          </h2>
+          <div class="mwb-product-details__description">
+            <p id="product-description">
+              Semper eget duis at tellus at urna condimentum mattis pellentesque. Sed odio morbi quis commodo odio aenean sed adipiscing. Eu volutpat odio facilisis mauris sit amet massa. 
+            </p>
+          </div>
+          <div class="mwb-product-details__info">
+            <div class="mwb-product-details__quantity">
+              <input type="number" id="quantity" name="quantity" min="1" value="1" role="modal-product-quantity">
+            </div>
+            <div id="product-price" class="mwb-product-details__price">
+              $50.00
+            </div>
+          </div>
+          <div class="mwb-product-details__quote">
+            <a class="mwb-btn" href="#" role="modal-quote-button">
+              Request A Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="product-added-toast" style="display:none">Product Added </div>

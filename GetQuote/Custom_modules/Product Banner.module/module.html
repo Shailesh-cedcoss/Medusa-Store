@@ -1,0 +1,26 @@
+<div class="mwb-pro-banner" style="background-image: url('{{ module.background_image.src }}');">
+  <div class="mwb-container mwb-container--banner">
+    <div class="mwb-pro-banner__wrap">
+      <div class="mwb-pro-banner__title">
+        <h1>
+          {{ module.banner_content.banner_title }}
+        </h1>
+      </div>
+      <div class="mwb-pro-banner__text">
+        {{ module.banner_content.banner_text }}
+      </div>
+      <div class="mwb-pro-banner__btn">
+        {% if module.banner_content.select_button_type == 'cta' %}
+          {% cta guid="{{ module.banner_content.banner_cta }}" %}
+        {% elif module.banner_content.select_button_type == 'button' %}
+          <a class="mwb-pro-banner__btn-link" href="{{ href }}"
+             {% if module.banner_content.button.button_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if module.banner_content.button.button_link.no_follow %}rel="nofollow"{% endif %}
+             >
+            {{ module.banner_content.button.button_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

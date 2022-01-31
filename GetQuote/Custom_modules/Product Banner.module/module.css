@@ -1,0 +1,42 @@
+.mwb-pro-banner {
+    padding: 100px 0;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mwb-container.mwb-container--banner {
+    max-width: 767px;
+}
+.mwb-pro-banner__wrap {
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  z-index: 5;
+}
+.mwb-pro-banner__title h1 {
+    margin: 0 0 15px;
+    font-size: 35px;
+}
+.mwb-pro-banner__text p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 0 20px;
+}
+.mwb-pro-banner:after {
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.38);
+}
+a.mwb-pro-banner__btn-link {
+    display: inline-block;
+    color: #222;
+    text-decoration: none;
+    background: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+}
