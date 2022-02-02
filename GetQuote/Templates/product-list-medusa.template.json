@@ -8,9 +8,6 @@
   "attachedJs" : [ {
     "type" : "cos_extension_resource",
     "path" : "/MWB-GetQuote/Coded_files/jQuery.js"
-  }, {
-    "type" : "cos_extension_resource",
-    "path" : "/MWB-GetQuote/Coded_files/mwb-pro-custom.js"
   } ],
   "customHead" : "",
   "customFooter" : "",
@@ -33,8 +30,9 @@
         "type" : "custom_widget",
         "params" : {
           "css_class" : "mwb-pro-header",
-          "css_id" : "",
-          "css_id_str" : "",
+          "schema_version" : 2,
+          "path" : "/MWB-GetQuote/Custom_modules/Product Listing Nav",
+          "per_widget_wrapper_html" : "",
           "css_style" : "",
           "logo_field" : {
             "alt" : "mwb-logo",
@@ -43,12 +41,11 @@
             "src" : "https://cdn2.hubspot.net/hubfs/6203240/mwb-logo.png",
             "width" : 100
           },
-          "overrideable" : true,
-          "path" : "/MWB-GetQuote/Custom_modules/Product Listing Nav",
-          "per_widget_wrapper_html" : "",
-          "schema_version" : 2,
+          "wrapping_html" : "",
+          "css_id" : "",
           "widget_name" : "Product Listing Nav",
-          "wrapping_html" : ""
+          "css_id_str" : "",
+          "overrideable" : true
         },
         "rows" : [ ],
         "rowMetaData" : [ ],
@@ -85,11 +82,11 @@
         "type" : "widget_container",
         "params" : {
           "css_class" : "",
-          "css_id" : "",
-          "css_id_str" : "",
+          "per_widget_wrapper_html" : "",
           "css_style" : "",
           "wrapping_html" : "",
-          "per_widget_wrapper_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
           "overrideable" : false
         },
         "rows" : [ ],
@@ -106,6 +103,10 @@
           "label" : "Product Banner",
           "type" : "custom_widget",
           "params" : {
+            "css_class" : "",
+            "schema_version" : 2,
+            "path" : "/MWB-GetQuote/Custom_modules/Product Banner",
+            "per_widget_wrapper_html" : "",
             "banner_content" : {
               "banner_text" : "<p><span>At lectus urna duis convallis. Amet venenatis urna<br>cursus eget nunc scelerisque. Malesuada fames ac turpis egestas sed tempus urna.</span></p>",
               "button" : {
@@ -119,16 +120,12 @@
                 }
               }
             },
-            "css_class" : "",
-            "css_id" : "",
-            "css_id_str" : "",
             "css_style" : "",
-            "overrideable" : true,
-            "path" : "/MWB-GetQuote/Custom_modules/Product Banner",
-            "per_widget_wrapper_html" : "",
-            "schema_version" : 2,
+            "wrapping_html" : "",
+            "css_id" : "",
             "widget_name" : "Product Banner",
-            "wrapping_html" : ""
+            "css_id_str" : "",
+            "overrideable" : true
           },
           "rows" : [ ],
           "rowMetaData" : [ ],
@@ -146,15 +143,15 @@
           "type" : "custom_widget",
           "params" : {
             "css_class" : "",
-            "css_id" : "",
-            "css_id_str" : "",
-            "css_style" : "",
-            "overrideable" : true,
+            "schema_version" : 2,
             "path" : "/MWB-GetQuote/Custom_modules/MWB Product List Module",
             "per_widget_wrapper_html" : "",
-            "schema_version" : 2,
+            "css_style" : "",
+            "wrapping_html" : "",
+            "css_id" : "",
             "widget_name" : "MWB Product List Module",
-            "wrapping_html" : ""
+            "css_id_str" : "",
+            "overrideable" : true
           },
           "rows" : [ ],
           "rowMetaData" : [ ],
@@ -192,15 +189,15 @@
         "type" : "custom_widget",
         "params" : {
           "css_class" : "",
-          "css_id" : "",
-          "css_id_str" : "",
-          "css_style" : "",
-          "overrideable" : true,
+          "schema_version" : 2,
           "path" : "/MWB-GetQuote/Custom_modules/Footer",
           "per_widget_wrapper_html" : "",
-          "schema_version" : 2,
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
           "widget_name" : "Footer",
-          "wrapping_html" : ""
+          "css_id_str" : "",
+          "overrideable" : true
         },
         "rows" : [ ],
         "rowMetaData" : [ ],

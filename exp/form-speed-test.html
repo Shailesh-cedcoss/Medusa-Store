@@ -1,0 +1,42 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    {{ standard_header_includes }}
+    <link rel="preconnect"href="https://forms.hsforms.com">
+    <script>
+      // override the hbspt functionality while hubspot is loading
+      var hbspt = {
+         //push form to hubcache queue
+         forms:{create:function(c){hubspot.forms.push(c)}},
+      };
+
+      // cache hubspot forms here
+      var hubcache = {
+              forms:[],
+              letsgo:function(){
+                  for (var i in hubspot.forms){
+                    //hubspot is now loaded
+                    hbspt.forms.create(hubcache.forms[i]);
+                  }            
+              }
+          }
+      </script>
+      <script 
+         type="text/javascript" 
+         defer 
+         src="//js.hsforms.net/forms/v2.js" 
+         onload="hubcache.letsgo()">
+      </script>
+  </head>
+  <body>
+    {% dnd_area "body_dnd_area" %}{% end_dnd_area %}
+    {{ standard_footer_includes }}
+  </body>
+</html>

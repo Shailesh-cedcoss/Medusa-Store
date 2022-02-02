@@ -1,0 +1,12 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 61551565685,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../Coded_files/checkouthandling.js",
+    "name" : "jQuery.js"
+  } ],
+  "label" : "checkout-medusa",
+  "is_available_for_new_content" : true
+}

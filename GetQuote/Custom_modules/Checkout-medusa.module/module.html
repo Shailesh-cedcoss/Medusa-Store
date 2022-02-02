@@ -27,16 +27,9 @@
         </table>
       </div>
       <div class="mwb-pro-details__col mwb-pro-details__form">
-        {% form
-        form_to_use="{{ module.quote_form.form_id }}"
-        response_response_type="{{ module.quote_form.response_type }}"
-        response_message="{{ module.quote_form.message }}"
-        response_redirect_id="{{ module.quote_form.redirect_id }}"
-        response_redirect_url="{{module.quote_form.redirect_url}}"
-        gotowebinar_webinar_key="{{ module.quote_form.gotowebinar_webinar_key }}"
-        %}
+        <button id="rzp-button1">Pay</button>
       </div>
     </div>
   </div>
 </div>
-{{ require_js('../js/productlisting.js'), { "defer" :true }) }}
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>

@@ -5,6 +5,7 @@
   "label" : "Logo",
   "required" : false,
   "locked" : false,
+  "show_loading" : false,
   "type" : "logo",
   "default" : {
     "override_inherited_src" : true,
