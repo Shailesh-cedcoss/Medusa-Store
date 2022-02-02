@@ -1,7 +1,7 @@
 import _ from "lodash";
 
-const DEFAULT_REGION_ID = "reg_01FTQVGGTD3109XBF8JQCHB1YH";
-const DEFAULT_SHIPPING_ID = "so_01FTQVGGVC9E0PCX39P6GFER6M";
+const DEFAULT_REGION_ID = "reg_01FTT8FCX4G06C7YRTY8E95M3X";
+const DEFAULT_SHIPPING_ID = "so_01FTT8FCY0YWVGD8XZMBPPPJFG";
 
 const getDraftOrderData = (draftOrderService, draftOrderId) =>
   draftOrderService.retrieve(draftOrderId, {
@@ -10,11 +10,45 @@ const getDraftOrderData = (draftOrderService, draftOrderId) =>
 
 export async function addToCart(req) {
   const draftOrderService = req.scope.resolve("draftOrderService");
-
   let reqDraftOrderId = req.query.draftOrderId;
   let reqVariantId = req.query.variantId;
+  let reqOperation = req.query.operation;
 
   if (reqDraftOrderId && !reqVariantId) {
+    return await getDraftOrderData(draftOrderService, reqDraftOrderId);
+  }
+  if (reqDraftOrderId && reqVariantId && reqOperation) {
+    let draftOrder = await getDraftOrderData(
+      draftOrderService,
+      reqDraftOrderId
+    );
+
+    let lineItem = _.find(draftOrder.cart.items, {
+      variant_id: reqVariantId,
+    });
+
+    const lineItemService = req.scope.resolve("lineItemService");
+    const cartService = req.scope.resolve("cartService");
+
+    // if product does not exits in the draft order passed in the request
+    if (!lineItem) {
+      await createLinetItem(
+        lineItemService,
+        draftOrder,
+        reqVariantId,
+        cartService
+      );
+      return await getDraftOrderData(draftOrderService, reqDraftOrderId);
+    }
+
+    //
+    const lineItemRet = await lineItemService.retrieve(lineItem.id);
+    // if product exits then update the quantity
+    await lineItemService.update(lineItemRet.id, {
+      quantity:
+        reqOperation == "dec" ? --lineItemRet.quantity : ++lineItemRet.quantity,
+    });
+
     return await getDraftOrderData(draftOrderService, reqDraftOrderId);
   }
 

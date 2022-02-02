@@ -2,6 +2,9 @@ import { Router } from "express";
 import bodyParser from "body-parser";
 import { allowCors } from "./functions/allow-cors";
 import { addToCart } from "./functions/add-to-cart";
+import { getOrderId } from "./functions/create-order-payment";
+import { changeOrderStatus } from "./functions/draft-order-status";
+import Razorpay from "razorpay";
 
 export default () => {
   const app = Router();
@@ -43,5 +46,21 @@ export default () => {
       limit: 20,
     });
   });
+
+  app.get("/create-payment-order", bodyParser.json(), async (req, res) => {
+    allowCors(res);
+    const instance = new Razorpay({
+      key_id: "rzp_test_dIIyGFY7lcgcVs",
+      key_secret: "5UBJil2uuLDFoLHkF9Th8GzH",
+    });
+
+    res.json(await getOrderId(instance, req));
+  });
+
+  // app.get("/change-draft-order-status", bodyParser.json(), async (req, res) => {
+  //   allowCors(res);
+  //   res.json(await changeOrderStatus(req));
+  // });
+
   return app;
 };
