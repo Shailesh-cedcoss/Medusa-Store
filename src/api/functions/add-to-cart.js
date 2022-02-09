@@ -1,7 +1,7 @@
 import _ from "lodash";
 
-const DEFAULT_REGION_ID = "reg_01FTT8FCX4G06C7YRTY8E95M3X";
-const DEFAULT_SHIPPING_ID = "so_01FTT8FCY0YWVGD8XZMBPPPJFG";
+const DEFAULT_REGION_ID = "reg_01FVEGVXEFDBHJFBRFR8QYTR9Q";
+const DEFAULT_SHIPPING_ID = "so_01FVEGVXFW60ZBD6XAN25QAQ3F";
 
 const getDraftOrderData = (draftOrderService, draftOrderId) =>
   draftOrderService.retrieve(draftOrderId, {

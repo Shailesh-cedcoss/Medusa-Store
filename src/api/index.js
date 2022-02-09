@@ -1,5 +1,6 @@
 import { Router } from "express";
 import bodyParser from "body-parser";
+import { MedusaError } from "medusa-core-utils";
 import { allowCors } from "./functions/allow-cors";
 import { addToCart } from "./functions/add-to-cart";
 import { getOrderId } from "./functions/create-order-payment";
@@ -57,10 +58,10 @@ export default () => {
     res.json(await getOrderId(instance, req));
   });
 
-  // app.get("/change-draft-order-status", bodyParser.json(), async (req, res) => {
-  //   allowCors(res);
-  //   res.json(await changeOrderStatus(req));
-  // });
+  app.get("/change-draft-order-status", bodyParser.json(), async (req, res) => {
+    allowCors(res);
+    res.json(await changeOrderStatus(req));
+  });
 
   return app;
 };
