@@ -45,8 +45,6 @@ const renderCart = (cart, draftOrderId) => {
     products.push(cart.items[item]);
   });
 
-  $('#cart-count').text(totalItems);
-
   $('#cart-table-body').html('');
 
   Object.keys(products).forEach(function (productID) {
@@ -125,6 +123,7 @@ const renderCart = (cart, draftOrderId) => {
           ' $</td></tr>'
       );
     }
+    $('#cart-count').text(totalItems);
   });
 };
 
@@ -154,12 +153,7 @@ $(document).ready(function () {
       });
 
       let options = {
-        key: 'rzp_test_dIIyGFY7lcgcVs', // Enter the Key ID generated from the Dashboard
-        amount: totalPrice, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-        currency: 'INR',
-        name: 'Acme Corp',
-        description: 'Test Transaction',
-        image: 'https://example.com/your_logo',
+        key: 'rzp_test_dIfunctionxample.com/your_logo',
         order_id: orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         handler: function (response) {
           paymentId = response.razorpay_payment_id;
@@ -203,14 +197,13 @@ $(document).ready(function () {
 const changeDraftOrderStatus = (draftOrder, paymentNumber) => {
   $.ajax({
     type: 'GET',
-    url: `http://localhost:9000/add-to-cart`,
+    url: `http://localhost:9000/change-draft-order-status`,
     data: {
-      paymentId: paymentNumber,
+      // paymentId: paymentNumber,
       draftOrderId: draftOrder,
     },
     success: function (data) {
-      updateFrontendCart(data);
-      showProductAdded();
+      console.log(data);
     },
     error: function () {
       throw new Error('Some error Occoured');
