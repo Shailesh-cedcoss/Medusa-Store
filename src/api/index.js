@@ -4,7 +4,7 @@ import Razorpay from 'razorpay';
 import { allowCors } from './functions/allow-cors';
 import { addToCart } from './functions/add-to-cart';
 import { getOrderId } from './functions/create-order-payment';
-import { changeOrderStatus } from './functions/draft-order-status';
+import changeOrderStatus from './functions/draft-order-status';
 
 export default () => {
   const app = Router();
@@ -57,10 +57,14 @@ export default () => {
     res.json(await getOrderId(instance, req));
   });
 
-  app.get('/change-draft-order-status', bodyParser.json(), async (req, res) => {
-    allowCors(res);
-    res.json(await changeOrderStatus(req));
-  });
+  app.post(
+    '/change-draft-order-status',
+    bodyParser.json(),
+    async (req, res) => {
+      allowCors(res);
+      res.json(await changeOrderStatus(req, res));
+    }
+  );
 
   return app;
 };

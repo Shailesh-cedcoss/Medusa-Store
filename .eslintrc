@@ -16,8 +16,8 @@
     "plugin:json/recommended",
     "eslint:recommended",
     "airbnb",
-    "plugin:prettier/recommended",
-    "prettier"
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   "plugins": ["import", "html", "no-jquery", "etc"],
   "rules": {
@@ -28,8 +28,8 @@
       }
     ],
     "radix": "off",
-    "no-magic-numbers": "error",
-    "etc/no-commented-out-code": "error",
+    "no-magic-numbers": "warn",
+    "etc/no-commented-out-code": "warn",
     "etc/no-t": "error"
   }
 }
