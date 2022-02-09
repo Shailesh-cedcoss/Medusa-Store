@@ -1,0 +1,35 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "_": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "extends": [
+    "plugin:no-jquery/deprecated",
+    "plugin:json/recommended",
+    "eslint:recommended",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": ["import", "html", "no-jquery", "etc"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
+    ],
+    "radix": "off",
+    "no-magic-numbers": "error",
+    "etc/no-commented-out-code": "error",
+    "etc/no-t": "error"
+  }
+}
