@@ -1,1 +1,3 @@
-export function addProduct(variantId, draftId) {}
+export function addProduct(variantId, draftId) {
+  // pass.
+}

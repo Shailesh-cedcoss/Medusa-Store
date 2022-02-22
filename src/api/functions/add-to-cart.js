@@ -1,6 +1,6 @@
 import _ from "lodash";
 
-const DEFAULT_REGION_ID = "reg_01FVEGVXEFDBHJFBRFR8QYTR9Q";
+const DEFAULT_REGION_ID = "reg_01FWG88B7SVYA24E0M3FAFTY0T";
 const DEFAULT_SHIPPING_ID = "so_01FVEGVXFW60ZBD6XAN25QAQ3F";
 
 const getDraftOrderData = (draftOrderService, draftOrderId) =>
