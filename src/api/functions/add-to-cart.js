@@ -1,34 +1,34 @@
-import _ from "lodash";
+import _ from 'lodash';
 
-const DEFAULT_REGION_ID = "reg_01FWG88B7SVYA24E0M3FAFTY0T";
-const DEFAULT_SHIPPING_ID = "so_01FVEGVXFW60ZBD6XAN25QAQ3F";
+const DEFAULT_REGION_ID = 'reg_01FWG88B8R5H2P6TF1BXCFKNH9';
+const DEFAULT_SHIPPING_ID = 'so_01FWG88BA2AGAN2QXMZG9HQPTS';
 
 const getDraftOrderData = (draftOrderService, draftOrderId) =>
   draftOrderService.retrieve(draftOrderId, {
-    relations: ["order", "cart", "cart.items"],
+    relations: ['order', 'cart', 'cart.items'],
   });
 
 export async function addToCart(req) {
-  const draftOrderService = req.scope.resolve("draftOrderService");
-  let reqDraftOrderId = req.query.draftOrderId;
-  let reqVariantId = req.query.variantId;
-  let reqOperation = req.query.operation;
+  const draftOrderService = req.scope.resolve('draftOrderService');
+  const reqDraftOrderId = req.query.draftOrderId;
+  const reqVariantId = req.query.variantId;
+  const reqOperation = req.query.operation;
 
   if (reqDraftOrderId && !reqVariantId) {
     return await getDraftOrderData(draftOrderService, reqDraftOrderId);
   }
   if (reqDraftOrderId && reqVariantId && reqOperation) {
-    let draftOrder = await getDraftOrderData(
+    const draftOrder = await getDraftOrderData(
       draftOrderService,
       reqDraftOrderId
     );
 
-    let lineItem = _.find(draftOrder.cart.items, {
+    const lineItem = _.find(draftOrder.cart.items, {
       variant_id: reqVariantId,
     });
 
-    const lineItemService = req.scope.resolve("lineItemService");
-    const cartService = req.scope.resolve("cartService");
+    const lineItemService = req.scope.resolve('lineItemService');
+    const cartService = req.scope.resolve('cartService');
 
     // if product does not exits in the draft order passed in the request
     if (!lineItem) {
@@ -46,24 +46,24 @@ export async function addToCart(req) {
     // if product exits then update the quantity
     await lineItemService.update(lineItemRet.id, {
       quantity:
-        reqOperation == "dec" ? --lineItemRet.quantity : ++lineItemRet.quantity,
+        reqOperation == 'dec' ? --lineItemRet.quantity : ++lineItemRet.quantity,
     });
 
     return await getDraftOrderData(draftOrderService, reqDraftOrderId);
   }
 
   if (reqDraftOrderId && reqVariantId) {
-    let draftOrder = await getDraftOrderData(
+    const draftOrder = await getDraftOrderData(
       draftOrderService,
       reqDraftOrderId
     );
 
-    let lineItem = _.find(draftOrder.cart.items, {
+    const lineItem = _.find(draftOrder.cart.items, {
       variant_id: reqVariantId,
     });
 
-    const lineItemService = req.scope.resolve("lineItemService");
-    const cartService = req.scope.resolve("cartService");
+    const lineItemService = req.scope.resolve('lineItemService');
+    const cartService = req.scope.resolve('cartService');
 
     // if product does not exits in the draft order passed in the request
     if (!lineItem) {
@@ -88,8 +88,8 @@ export async function addToCart(req) {
 
   if (reqVariantId) {
     // if there is no draft order and a product was passed
-    let newDraftOrder = await draftOrderService.create({
-      email: "cart@mwb.com",
+    const newDraftOrder = await draftOrderService.create({
+      email: 'cart@mwb.com',
       region_id: DEFAULT_REGION_ID,
       shipping_methods: [
         {
